@@ -1,11 +1,12 @@
 package keeper
 
 import (
-	"blog/x/blog/types"
 	"encoding/binary"
 
-	sdk "github.co/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/store/prefix"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+
+	"blog/x/blog/types"
 )
 
 func (k Keeper) AppendPost(ctx sdk.Context, post types.Post) uint64 {
