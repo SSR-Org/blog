@@ -88,6 +88,7 @@ func (m *MsgCreatePost) GetBody() string {
 }
 
 type MsgCreatePostResponse struct {
+	Id uint64
 }
 
 func (m *MsgCreatePostResponse) Reset()         { *m = MsgCreatePostResponse{} }
